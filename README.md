@@ -12,14 +12,13 @@ B.E.M.(Block Element M)
 구성요소의 속성 --로 클래스명 지정
 
 Ex.)
-  <!-- 
-  <div class="borad">
-    <h1 class="borad__title">제목</h1>
-    <p class="borad__content">내용</p>
-    <input class="borad__btn" type="button" value="버튼">
-    <input class="borad__btn--big" type="button" value="큰버튼">
-    <input class="borad__btn--big borad__btn--yellow" type="button" value="크고 노란 버튼">
-  </div> -->
+  &lt;div class="borad">
+    &lt;h1 class="borad__title">제목&lt;/h1>
+    &lt;p class="borad__content">내용&lt;/p>
+    &lt;input class="borad__btn" type="button" value="버튼">
+    &lt;input class="borad__btn--big" type="button" value="큰버튼">
+    &lt;input class="borad__btn--big borad__btn--yellow" type="button" value="크고 노란 버튼">
+  &lt;/div>
 
   ※장점
   1. 타인이 혹은 미래에 보더라도 class명만으로 해당 태그의 역할을 쉽게 짐작할 수 있다.(협동성/연속성/신속성)
