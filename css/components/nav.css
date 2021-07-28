@@ -14,29 +14,15 @@ nav {
 }
 .nav__link {
   color: #2e363e;
-}
-.nav__notice{
-  background-color: var(--red);
-  border-radius: 50%;
-  position: absolute;
-}
-.nav__link{
   position: relative;
 }
-.nav__num-notice{
-  width: 23px;
-  height: 23px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
+.nav__notice--num{
+  position: absolute;
   left: 20px;
   bottom: 18px;
 }
-.nav__dot-notice{
-  width: 7px;
-  height: 7px;
+.nav__notice--dot{
+  position: absolute;
   left: 30px;
   bottom: 25px;
 }

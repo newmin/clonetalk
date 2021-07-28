@@ -1,0 +1,18 @@
+.notice--num{
+  background-color: var(--red);
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.notice--dot{
+  background-color: var(--red);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
