@@ -1,5 +1,9 @@
-:root{
-    --yellow : #FAE100;
-    --red : #E94E58;
-    --horizontal-space : 25px;
+:root {
+  --yellow: #fae100;
+  --red: #e94e58;
+  --horizontal-space: 25px;
+
+  --hr-border: 1px solid rgba(0, 0, 0, 0.2);
+
+  --gray-text: rgba(0, 0, 0, 0.5);
 }
