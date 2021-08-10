@@ -1,6 +1,11 @@
-.profile__msg {
-  display: inline;
+.more-screen .icons-row {
+  margin-top: 55px;
 }
-.profile__text i {
-  color: #ff7e70;
+.more-suggestion {
+  border-top: var(--hr-border);
+  margin-top: 50px;
+}
+.more-suggestion__title {
+  margin-top: 30px;
+  margin-bottom: -20px;
 }
