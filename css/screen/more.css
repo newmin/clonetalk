@@ -9,3 +9,22 @@
   margin-top: 30px;
   margin-bottom: -20px;
 }
+.icons-row .fa-cannabis {
+  background-color: maroon;
+  color: white;
+  padding: 6px;
+  border-radius: 10px;
+}
+.fa-line {
+  color: white;
+  background-color: green;
+  border: 10px solid green;
+  border-radius: 10px;
+}
+
+.icons-row .fa-staylinked {
+  background-color: blue;
+  color: white;
+  padding: 6px 9px;
+  border-radius: 10px;
+}
