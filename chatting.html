@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatting - Clone Talk</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="chatting__body">
+
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>200%</span>
+      <span class="status-bar__battery"><i class="fas fa-battery-three-quarters"></i></span>
+      <i class="far fa-clock"></i>
+    </div>
+  </div>
+
+  <header class="screen-header chatting__header">
+    <div class="screen-header__icons chatting__header-column">
+      <span><a href="chats.html"><i class="fas fa-angle-left fa-lg"></i></a></span>
+    </div>
+    <h1 class="screen-header__title">Klone Talk</h1>
+    <div class="screen-header__icons chatting__header-column">
+      <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="fas fa-bars fa-lg"></i></span>
+    </div>
+  </header>
+  
+  <main class="main">    
+
+    <!-- 날짜 -->
+    <div class="chatting__date-control">
+        <div class="chatting__date">
+            <span>2021. 08. 14. 토</span>
+        </div>
+    </div>
+
+    <!-- 메시지 -->
+    <div class="chat-message">
+        <img src="https://lh3.googleusercontent.com/a-/AOh14GjDxPE5a3iN7Kn93L_GIAGQ2uJbuXVAEcr1YU-9RA=s288-p-rw-no" alt="">
+        <div class="chat-message__content">
+            <span class="chat-message__name">Klone</span>
+            <div class="chat-message__info">
+                <span class="chat-message__msg">잘 돼가?</span>
+                <span class="chat-message__time">16:56</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-message chat-message--me">
+        <div class="chat-message__info">
+            <span class="chat-message__msg">그럼~ 지금 ${cloneTalk.ui}만큼이나 했는걸~</span>
+            <span class="chat-message__time">16:56</span>
+        </div>
+    </div>
+
+</main>
+
+<!-- 메시지 작성란 -->
+<form class="fill">
+    <div class="fill__column"><i class="far fa-plus-square fa-2x"></i></div>
+    <div class="fill__column fill__input--shape">
+        <input type="text">
+        <i class="far fa-smile fa-2x"></i>
+        <button class="fill__button"><i class="fas fa-arrow-up"></i></button>
+    </div>
+</form>
+
+<!-- 키보드 -->
+    
+    
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>

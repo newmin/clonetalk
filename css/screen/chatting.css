@@ -1,0 +1,115 @@
+#chatting__body {
+  background-color: #818b9c;
+  height: 150vh;
+}
+.chatting__header {
+  background-color: #7a8494;
+}
+.chatting__header-column {
+  width: 33%;
+}
+.chatting__header-column:last-child {
+  justify-content: flex-end;
+}
+.chatting__date {
+  background-color: #41444a;
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatting__date-control {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+/* 메시지 */
+.chat-message {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.chat-message img {
+  width: 60px;
+  height: 60px;
+  border-radius: 35%;
+}
+.chat-message__name {
+  opacity: 0.8;
+  font-size: 17px;
+  font-weight: 600;
+}
+.chat-message__info {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+.chat-message__msg {
+  padding: 15px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: white;
+  border-top-left-radius: 0;
+}
+.chat-message__time {
+  color: #c0c5ce;
+}
+
+.chat-message--me {
+  justify-content: flex-end;
+}
+.chat-message--me .chat-message__msg {
+  background-color: var(--yellow);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0;
+}
+.chat-message--me .chat-message__info {
+  flex-direction: row-reverse;
+}
+
+/* 작성란 */
+.fill {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 7px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fill__column:last-child {
+  width: 85%;
+}
+.fill input {
+  border: none;
+  width: 415px;
+  height: 30px;
+}
+.fill__input--shape {
+  border: var(--hr-border);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+}
+.fill i {
+  font-size: 40px;
+  color: var(--gray-text);
+}
+.fill .fa-arrow-up {
+  font-size: 30px;
+  color: black;
+}
+.fill__button {
+  border: none;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  padding: 10px;
+}
