@@ -4,16 +4,26 @@
   align-items: center;
   padding: var(--horizontal-space);
   margin-bottom: 10px;
+  text-align: center;
+  position: sticky;
+  top: var(--header-hight);
 }
 .screen-header__title {
   font-size: 35px;
   font-weight: 600;
 }
+.screen-header__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
 .screen-header__icons span {
-  margin-left: 25px;
+  font-size: 25px;
+  position: relative;
 }
 .screen-header__notice--dot {
-  position: relative;
-  left: 95px;
-  top: -25px;
+  position: absolute;
+  right: -7px;
+  top: -7px;
 }
