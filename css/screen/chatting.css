@@ -31,6 +31,8 @@
   display: flex;
   gap: 10px;
   margin-bottom: 25px;
+  opacity: 0;
+  animation: fadeInLeftToRight 0.5s linear forwards;
 }
 .chat-message img {
   width: 60px;
@@ -51,7 +53,6 @@
 .chat-message__msg {
   padding: 15px 10px;
   border-radius: 15px;
-  font-weight: 600;
   font-size: 18px;
   background-color: white;
   border-top-left-radius: 0;
@@ -62,6 +63,8 @@
 
 .chat-message--me {
   justify-content: flex-end;
+  animation: fadeInRightToLeft 0.5s linear forwards;
+  animation-delay: 0.8s;
 }
 .chat-message--me .chat-message__msg {
   background-color: var(--yellow);
@@ -70,6 +73,27 @@
 }
 .chat-message--me .chat-message__info {
   flex-direction: row-reverse;
+}
+
+@keyframes fadeInLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* 작성란 */
@@ -89,7 +113,7 @@
 .fill input {
   border: none;
   width: 415px;
-  height: 30px;
+  height: 45px;
 }
 .fill__input--shape {
   border: var(--hr-border);
@@ -112,4 +136,32 @@
   background-color: var(--yellow);
   border-radius: 50%;
   padding: 10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+.fill:focus-within i,
+.fill:focus-within button {
+  display: none;
+}
+
+.fill:focus-within input {
+  width: 80vw;
+  /* padding: 10px 0; */
+}
+
+.fill:focus-within .fill__input--shape {
+  width: 90vw;
+  transform: translateX(-20px);
+  transition: all 0.2s ease-in-out;
+}
+.fill:focus-within .fill {
+  animation: fadeInUp 0.5s ease-in-out;
 }
