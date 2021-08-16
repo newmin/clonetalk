@@ -1,6 +1,6 @@
 #chatting__body {
   background-color: #818b9c;
-  height: 150vh;
+  height: 100vh;
 }
 .chatting__header {
   background-color: #7a8494;
@@ -137,13 +137,21 @@
   border-radius: 50%;
   padding: 10px;
 }
+.fill__keyboard {
+  width: 100vw;
+  height: 366px;
+  position: fixed;
+  bottom: 0;
+  /* display: none; */
+  visibility: hidden;
+}
 
 @keyframes fadeInUp {
   from {
     transform: none;
   }
   to {
-    transform: translateY(-100px);
+    transform: translateY(-366px);
   }
 }
 
@@ -162,6 +170,9 @@
   transform: translateX(-20px);
   transition: all 0.2s ease-in-out;
 }
-.fill:focus-within .fill {
-  animation: fadeInUp 0.5s ease-in-out;
+.fill:focus-within {
+  animation: fadeInUp 0.3s ease-in-out forwards;
+}
+.fill:focus-within .fill__keyboard {
+  visibility: visible;
 }
