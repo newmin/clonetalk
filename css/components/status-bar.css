@@ -18,4 +18,18 @@
   color: greenyellow;
 }
 
-/* TODO thymeleaf와 같은 템플릿 활용할 수 있다면 적용해보기 */
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fa-wifi {
+  animation: blink 1.5s ease-in-out infinite;
+}
